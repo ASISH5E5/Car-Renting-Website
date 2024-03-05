@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="https://thumbs.dreamstime.com/z/sports-flame-logo-olympic-style-athletes-holding-flaming-torch-36969131.jpg">
+
+
+    <title>
+        Cars</title>
+    <style>
+        #full {
+
+            background-image: url("https://img.freepik.com/free-photo/front-view-black-sedan-sport-car-bridge_114579-4068.jpg?size=626&ext=jpg&ga=GA1.1.486771029.1706168306&semt=sph");
+ background-size: cover;
+
+        }
+
+        #nav {
+            font-size: 15px;
+        }
+
+        .carousel-item {
+            height: 630px;
+            margin-top: 10px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="p-0 m-0 border-0 bd-example m-0 border-0">
+
+    <!-- Navigation Bar -->
+    <nav class="navbar bg-primary" style="height: 80px; font-size: 20px" id="nav" data-bs-theme="dark">
+        <div class="container-fluid">
+            <span class="navbar-brand" style="font-size: 30px;">Car Rental Website</span>
+            <ul class="nav nav-pills ms-auto" id="navs">
+                <li class="nav-item" style="margin: 0px 20px 0px 40px;">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                </li>
+                <li class="nav-item" style="margin: 0px 20px 0px 40px;">
+                    <a class="nav-link active" href="/asignup">Admin</a>
+                </li>
+                <li class="nav-item" style="margin: 0px 20px 0px 40px;">
+                    <a class="nav-link active" href="/psignup">User</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Carousel -->
+    <div class="p-10 m-0 border-0 bd-example m- border-5" id="full" style="width: 100%; height: 100%;">
+        <div class="p-15 m-0 border-0 bd-example m-0 border-0">
+            <div id="carouselExample" class="carousel slide" style="max-width: 1000px; margin: auto; height:655px">
+                <div class="carousel-inner">
+                    <div class="carousel-item" style="background-image: url('images.jpeg');">
+                        <img src="https://img.freepik.com/free-photo/sports-car-races-through-dark-blurred-motion-generative-ai_188544-12490.jpg?size=626&ext=jpg&ga=GA1.1.486771029.1706168306&semt=sph" alt="First slide"> 
+                    </div>
+                    <div class="carousel-item active" >
+                        <img src="https://img.freepik.com/free-photo/3d-car-with-vibrant-colors_23-2150796954.jpg?size=626&ext=jpg&ga=GA1.1.486771029.1706168306&semt=sph" alt="Second slide">
+                    </div>
+                    <div class="carousel-item" style="background-image: url('images.jpeg');">
+<img src="https://img.freepik.com/premium-photo/white-mercedes-benz-car-is-driving-highway_890746-1811.jpg?size=626&ext=jpg&ga=GA1.1.486771029.1706168306&semt=sph" alt="Third slide">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
