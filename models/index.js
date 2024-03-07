@@ -13,8 +13,13 @@ let sequelize;
 
 try {
   if (config.use_env_variable && process.env[config.use_env_variable]) {
+    console.log('Using database URL from environment variable:', process.env[config.use_env_variable]);
     sequelize = new Sequelize(process.env[config.use_env_variable], config);
+  } else if (config.url) {
+    console.log('Using database URL directly from config.json:', config.url);
+    sequelize = new Sequelize(config.url, config);
   } else {
+    console.log('Using database configuration from config.json:', config.database);
     sequelize = new Sequelize(config.database, config.username, config.password, config);
   }
 
@@ -39,6 +44,8 @@ try {
 
   db.sequelize = sequelize;
   db.Sequelize = Sequelize;
+
+  console.log('Connection to the database has been established successfully.');
 } catch (error) {
   console.error('Unable to initialize Sequelize:', error);
 }

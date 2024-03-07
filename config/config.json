@@ -14,7 +14,7 @@
     "dialect": "postgres"
   },
   "production": {
-    "use_env_variable":"DATABASE_URL",
+    "url":"postgres://username:password@localhost:5432/Cars",
     "dialect": "postgres"
   }
 }
