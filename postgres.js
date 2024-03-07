@@ -11,7 +11,7 @@ const connection = async () => {
         await sequelize.authenticate();
         console.log('Connection to the database has been established successfully.');
     } catch (error) {
-        console.error('Unable to connect to the database: new1', error.message);
+        console.error('Unable to connect to the database', error.message);
     }
 };
 

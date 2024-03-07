@@ -18,7 +18,7 @@ app.use(csrf({cookie:true}))
 const csrfProtection = csrf({ cookie: true });
 app.use(csrfProtection);
 
-connection();
+
 app.use(express.static(path.join(__dirname, 'public')));
 app.set("view engine", "ejs");
 app.use(express.static('public'));
